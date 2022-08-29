@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    /*Removendo as margens do body*/
+}
+
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    align-items: center;
+    background-color: aqua;
+    height: 100px;
+    left: 0;
+    right: 0;
+    /*Organizando visualmente o conteúdo do cabeçalho, distribuindo espaçamento entre as sessões,
+    bem como dando-lhe coloração, para facilitar o manuseamento*/
+}
+
+.left-section{
+
+}
+
+.middle-section{
+
+}
+
+.right-section{
+    
+}

@@ -1,0 +1,128 @@
+/*Trabalhando diretamente com o conteúdo da sessão mais a esquerda.*/
+.texts,.text,.text-dark{
+    /*Definindo um padrão para as funcionalidades de texto.*/
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+}
+
+.texts,.text{
+    /*removendo a propriedade padrão (block) dos parágrafos.*/
+    display:inline-block;
+}
+
+.text-dark{
+    /*Ocultando temporáriamente o elemento textual, referente ao dark mode.*/
+    display:none;
+}
+
+.texts{
+    /*Distribuindo e fazendo ajustes no espaçamento.*/
+    margin-left: 10px;
+}
+
+label{
+    /*Ajustando o espaçamento e atribuindo mudanças ao cursor.*/
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.switch-bar{
+    /*Criando a modelagem do botão (inicialmente pela barra e posteriormente o círculo nela contido).*/
+    width: 49px;
+    height: 24px;
+    background-color: rgb(247, 243, 243);
+    border-width: 1px;
+    border-radius: 30px;
+    border-color:rgb(212, 212, 212);
+    border-style: solid;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.animated-button{
+    /*Criando o círculo/botão a ser animado (Para a realização do evento de slide).*/
+    height: 20px;
+    width: 22px;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color:rgb(212, 212, 212);
+}
+
+#test{
+    /*Ocultando a checkbox (utilizada para simular o evento Onclick, de javascript, em CSS).*/
+    display:none;
+}
+
+#test:checked + label nav{
+    /*Utilizando da animação (Construção mais abaixo) para caso a condição de checked, da checkbox oculta, seja
+    realizada, gerando a ação de slide, característica dessa botão.*/
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+#test:checked + label .switch-bar{
+    /*Utilizando de uma segunda animação, para gerar a mudança de cor na barra onde o botão de slide está contido,
+    quando cumprida a condição de checked.*/
+    animation-name: color-change;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+#test:checked + label .text{
+    /*Ocultando o texto referente ao light mode, no momento que a condição (checked) for cumprida*/
+    display:none;
+
+}
+
+#test:checked + label .text-dark{
+    /*Revelando o conteúdo posteriormente ocultado, para o dark mode*/
+    display: inline-block;
+    color: black;
+    transition: color 0.5s;
+}
+
+label nav, label p:focus{
+    /*Utilizando da propriedades focus para criar uma condição ao desmarcar a checkbox, fazendo com que o botão de slide
+    não apenas retorne para seu estado original mas que tenha uma animação para tal.*/
+    animation-name: slideback;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.any-logo{
+    /*Ajustando o tamanho da logo em sua divisão*/
+    margin: 15px;
+    width: 155px;
+}
+
+
+@keyframes slide {
+    /*Criando a animação de slide com parâmetros de deslocamento e mudança de coloração*/
+    to{
+        transform:translateX(23.9px);
+        background-color: rgb(219, 58, 9);
+        border-color: rgb(219, 58, 9);
+    }
+    
+}
+
+@keyframes color-change {
+    /*Criando a animação de mudança de cor, para o background da barra do botão de slide*/
+    to{
+        background-color: black;
+        border-color: black;
+    }
+    
+}
+
+@keyframes slideback {
+    /*Criando a animação de slideback (Para que o botão retorne a sua posição de forma animada e não instantânea)*/
+    from{transform: translateX(23.9px);}
+    to{transform: translatex(0px);}
+}
