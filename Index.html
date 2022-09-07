@@ -10,8 +10,9 @@
     <!--Título da página-->
     
     <link rel="stylesheet", href="CSS/Index.css">
-    <link rel="stylesheet", href="CSS/Left-side.css">
-    <link rel="stylesheet", href="CSS/Middle-side.css">
+    <link rel="stylesheet", href="CSS/Header CSS/Left-side.css">
+    <link rel="stylesheet", href="CSS/Header CSS/Middle-side.css">
+    <link rel="stylesheet", href="CSS/Header CSS/Right-side.css">
     <!--Importando nosso Css-->
 </head>
 
@@ -43,10 +44,12 @@
             <div class="any-logo">
                 <a href="https://anydesk.com/pt"><img src="Images/Anydesklogo.svg"></a>
             </div>
-            <!--importanto e extruturando a logo-->
+            <!--Importanto e extruturando a logo-->
         </div>
-        
+
         <div class="middle-section">
+        <!--Criando esta divisória para organização visual e posteriormente estiliza-la-->
+
             <nav>Porquê anydesk?</nav>
 
             <nav>Soluções</nav>
@@ -59,7 +62,61 @@
         </div>
 
         <div class="right-section">
-            right
+        <!--Estilizando botões de navegação-->
+
+            <div class="top-side">
+                <nav class="language">
+                    <div class="itens">
+                        <img src="https://anydesk.com/_static/flags/4x3/br.svg", class="Br"> 
+                            <div class="lingua">Português</div>
+                    </div>
+                    <img src="Images/arrow-down-1-13dd01.svg" class="seta">
+                </nav>
+
+                <a href=""><nav class="help-center">
+                    <div class="circle-icon">
+                        <img src="Images/question-circle-e166ca.svg">
+                    </div>
+                    <span class="text1">Help-Center</span>
+                </nav></a>
+
+                <a href=""><nav class="phone">
+                    <div class="circle-icon2">
+                        <img src="Images/phone-circle-186093.svg">
+                    </div>
+                    <span class="text2">+55 (81) 99788-6767</span>
+                </nav></a>
+                <!--Segundo botão dinâmico-->
+
+                <a href="" id="any-space"><nav class="my-anydesk-little">
+                    <div class="circle-icon3">
+                        <img src="Images/single-neutral-circle_2-d96f02.svg">
+                    </div>
+                    <span class="text3">my.anydesk.com</span>
+                </nav></a>
+                <!--Último botão dinâmico-->
+
+            </div>
+
+            <!--Dividindo a div em duas partes (superior e inferior) para melhor manuseamento-->
+
+            <div class="bottom">
+                <!--Utilizada para manusear os botões fixos-->
+                <a href="" id="My">
+                    <nav class="my-AnyDesk-button">
+                        <div class="align">my.AnyDesk</div>
+                    </nav>
+                </a>
+
+                <a href="" id="Download">
+                    <nav class="Downloads">
+                        <div class="align">Downloads</div>
+                    </nav>
+                </a>
+
+            </div>
+        </div>
+
         </div>
 
     </header>

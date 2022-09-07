@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 body{
+    position: relative;
     margin:0;
+    font-family: 'Noto Sans',roboto;
     /*Removendo as margens do body*/
 }
 
 .header{
+    overflow: hidden;
     position: absolute;
     display: flex;
     justify-content: space-between;
     vertical-align: center;
-    align-items: center;
-    background-color: aqua;
     height: 100px;
     left: 0;
     right: 0;
@@ -22,9 +24,16 @@ body{
 }
 
 .middle-section{
-
+    width: 600px;
+    display:flex;
+    align-items: end;
 }
 
 .right-section{
-    
+    justify-content: end;
+    display:grid;
+    font: 16px bold;
+    font-family: 'Noto Sans',Roboto;
+    grid-template-rows: 1fr 1fr;
+    width: 475px;
 }

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap');
+
+.top-side > a {
+    text-decoration: none;
+    height: 28px;
+    margin-top: 12px;
+    margin-right: 4px;
+    color: black;
+}
+
+#My {
+    text-decoration: none;
+}
+
+#Download{
+    text-decoration: none;
+}
+
+#any-space{
+    margin-right: 10px;
+}
+
+/*Dividindo partições*/
+
+.top-side{
+    display: flex;
+    width: 475px;
+    justify-content: end;
+
+}
+
+.bottom{
+    display: flex;
+    justify-content: end;
+}
+
+/*Definições de proporções*/
+
+.language{
+    width: 135px;
+    height: 24px;
+    color: red;
+    cursor: pointer;
+    margin: 15px 23px 5px 0px;
+    border-bottom: 1px dotted red;
+    /*Estilizando o botão de idioma*/
+}
+
+.itens{
+    display: inline-flex;
+}
+
+.seta{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    /*Definindo proporções da seta*/
+}
+
+.Br{
+    /*Definindo proporções da bandeira*/
+    margin: 4px 3px 0px 0px;
+    width: 21.33;
+    height: 16px;
+}
+
+/*Primeiro botão animado*/
+
+.circle-icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border-width: 1px;
+    background-color: white;
+    /*Ajustando o tamanho do botão inicial*/
+}
+
+.help-center{
+    height: 28px;
+    display: flex;
+    overflow: hidden;
+    /*Criando a barra expansiva de modo que permaneça oculta*/
+}
+
+.help-center:hover{
+    height: 28px;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: rgb(255, 182, 193,0.7);
+    /*Ajustando a borda e coloração durante a pseudo-classe hover*/
+}
+
+.help-center .text1{
+    display: none;
+    overflow: hidden;
+    width: 0px;
+    /*Ocultando o conteúdo da barra expansiva, até que a ação ocorra*/
+}
+
+.help-center:hover .text1{
+    display: inline-block;
+    margin: 2px;
+    animation: expansion 0.5s forwards;
+    /*Realizando a ação de expansão, utilizando o keyframe encontrado ao fim do css*/
+}
+
+/*Repetindo o processo anterior para os demais botões*/
+
+/*Segundo botão*/
+
+.circle-icon2{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border-width: 1px;
+    background-color: white;
+}
+
+.phone{
+    height: 28px;
+    display: flex;
+    overflow: hidden;
+}
+
+.phone:hover{
+    height: 28px;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: rgb(255, 182, 193,0.7);
+}
+
+.phone .text2{
+    display: none;
+    overflow: hidden;
+    width: 0px;
+}
+
+.phone:hover .text2{
+    display: inline-block;
+    margin: 2px;
+    animation: expansion 0.5s forwards;
+}
+
+/*Terceiro botão*/
+
+.circle-icon3{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border-width: 1px;
+    background-color: white;
+}
+
+.my-anydesk-little{
+    height: 28px;
+    display: flex;
+    overflow: hidden;
+}
+
+.my-anydesk-little:hover{
+    height: 28px;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: rgb(255, 182, 193,0.7);
+}
+
+.my-anydesk-little .text3{
+    display: none;
+    overflow: hidden;
+    width: 0px;
+}
+
+.my-anydesk-little:hover .text3{
+    display: inline-block;
+    margin: 2px;
+    animation: expansion 0.5s forwards;
+}
+
+/*Primeiro botão fixo*/
+
+.my-AnyDesk-button{
+    padding: 8px 25px 10px 25px;
+    margin: 10px 5px 3px 0px;
+    background-color: rgb(231, 3, 3, 0.7);
+    color: white;
+    font-weight: bolder;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(231, 3, 3, 0.7);
+    transition: border-color 0.3s;
+    /*Modelando o primeiro botão estático*/
+}
+
+.my-AnyDesk-button:hover{
+    background-color: rgb(231, 3, 3);
+}
+
+.Downloads{
+    padding: 8px 25px 10px 25px;
+    background-color: white;
+    margin: 10px 15px 3px 5px;
+    color: rgb(231, 3, 3);
+    font-weight: bold;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(231, 3, 3);
+    transition: border-color 0.3s;
+}
+.Downloads:hover{
+    background-color: rgb(248, 135, 135,0.5);
+}
+
+.Downloads:active,.my-AnyDesk-button:active{
+    border-color: white;
+}
+
+@keyframes expansion {
+    to{
+        width: 160px;
+    }
+    /*Animação de expansão para os botões*/
+}

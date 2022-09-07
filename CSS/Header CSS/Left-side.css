@@ -1,13 +1,10 @@
 /*Trabalhando diretamente com o conteúdo da sessão mais a esquerda.*/
-.texts,.text,.text-dark{
+
+.texts{
     /*Definindo um padrão para as funcionalidades de texto.*/
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans';
     vertical-align: middle;
-}
-
-.texts,.text{
-    /*removendo a propriedade padrão (block) dos parágrafos.*/
     display:inline-block;
 }
 
@@ -16,9 +13,14 @@
     display:none;
 }
 
+.text{
+    color: rgb(61, 58, 58);
+    margin-top: 10px;
+}
+
 .texts{
     /*Distribuindo e fazendo ajustes no espaçamento.*/
-    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 label{
@@ -31,22 +33,25 @@ label{
     /*Criando a modelagem do botão (inicialmente pela barra e posteriormente o círculo nela contido).*/
     width: 49px;
     height: 24px;
-    background-color: rgb(247, 243, 243);
+    background-color: rgb(240, 236, 236);
     border-width: 1px;
     border-radius: 30px;
-    border-color:rgb(212, 212, 212);
+    border-color:rgb(230, 227, 227);
     border-style: solid;
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 .animated-button{
     /*Criando o círculo/botão a ser animado (Para a realização do evento de slide).*/
-    height: 20px;
-    width: 22px;
+    height: 22px;
+    width: 24px;
     border-style: solid;
     border-radius: 100%;
-    border-width: 2px;
+    border-width: 1px;
+    background-color: white;
     border-color:rgb(212, 212, 212);
 }
 
@@ -59,7 +64,7 @@ label{
     /*Utilizando da animação (Construção mais abaixo) para caso a condição de checked, da checkbox oculta, seja
     realizada, gerando a ação de slide, característica dessa botão.*/
     animation-name: slide;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -68,7 +73,7 @@ label{
     /*Utilizando de uma segunda animação, para gerar a mudança de cor na barra onde o botão de slide está contido,
     quando cumprida a condição de checked.*/
     animation-name: color-change;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 
@@ -91,14 +96,15 @@ label nav, label p:focus{
     /*Utilizando da propriedades focus para criar uma condição ao desmarcar a checkbox, fazendo com que o botão de slide
     não apenas retorne para seu estado original mas que tenha uma animação para tal.*/
     animation-name: slideback;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+
 .any-logo{
     /*Ajustando o tamanho da logo em sua divisão*/
-    margin: 15px;
-    width: 155px;
+    margin-left: 15px;
+    width: 160px;
 }
 
 
