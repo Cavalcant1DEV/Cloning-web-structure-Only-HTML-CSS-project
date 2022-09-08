@@ -24,7 +24,7 @@
 
 .top-side{
     display: flex;
-    width: 475px;
+    width: 425px;
     justify-content: end;
 
 }
@@ -187,7 +187,7 @@
     border-radius: 25px;
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(231, 3, 3, 0.7);
+    border-color:  rgb(231, 3, 3, 0.7);
     transition: border-color 0.3s;
     /*Modelando o primeiro botão estático*/
 }

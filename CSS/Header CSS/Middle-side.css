@@ -1,3 +1,21 @@
-.middle-section > nav {
-    margin-right: 15px;
+.middle-section > a, .middle-section > nav {
+    text-decoration: none;
+    color: black;
+    margin: 5px 16px;
+    height: 27.8px;
+    padding: 4px 0px;
+    border-bottom: solid;
+    border-color: white;
+    cursor: pointer;
+    transition: border-color 0.5s;
+}
+
+.middle-section > a:hover, .middle-section > nav:hover{
+    border-bottom: solid;
+    border-color: rgb(255,0,0, 0.4);
+}
+
+.black-arrow{
+    width: 12px;
+    height: 12px;
 }

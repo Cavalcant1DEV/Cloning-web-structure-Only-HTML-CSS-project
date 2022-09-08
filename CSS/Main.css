@@ -1,0 +1,67 @@
+main{
+    padding-top: 176px;
+}
+
+.frase {
+    display: grid;
+    grid-template-columns: 1.20fr 1fr;
+    padding: 0px 15px;
+    margin-bottom: 16px;
+    font-size: 144px;
+}
+
+.letters{
+    display: flex;
+    justify-content: end;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.hidden1{
+    overflow: hidden;
+    width: 600px;
+    height: 196px;
+}
+
+.hidden2{
+    height: 196px;
+    animation: slide-back2 4s forwards;
+    animation-delay: 0.8s;
+}
+
+.letters-end{
+    display: flex;
+    color:red;
+}
+
+.hidden2 > div{
+    display: flex;
+    justify-content: end;
+    font-family: "Noto Sans", Calibri, Arial, sans-serif;
+}
+
+@keyframes slide-back2 {
+    0%{ 
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(-196px);
+    }
+
+    40%{
+        transform: translateY(-392px);
+    }
+
+    60%{
+        transform: translateY(-588px);
+    }
+
+    80%{
+        transform: translateY(-784px)
+    }
+
+    100%{
+        transform: translateY(-980px)
+    }
+}

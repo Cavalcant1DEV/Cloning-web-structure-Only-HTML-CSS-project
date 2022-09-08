@@ -11,6 +11,7 @@
 .text-dark{
     /*Ocultando temporáriamente o elemento textual, referente ao dark mode.*/
     display:none;
+    margin-top: 10px;
 }
 
 .text{
@@ -33,7 +34,7 @@ label{
     /*Criando a modelagem do botão (inicialmente pela barra e posteriormente o círculo nela contido).*/
     width: 49px;
     height: 24px;
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(250, 242, 242);
     border-width: 1px;
     border-radius: 30px;
     border-color:rgb(230, 227, 227);
@@ -64,7 +65,7 @@ label{
     /*Utilizando da animação (Construção mais abaixo) para caso a condição de checked, da checkbox oculta, seja
     realizada, gerando a ação de slide, característica dessa botão.*/
     animation-name: slide;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
@@ -73,7 +74,7 @@ label{
     /*Utilizando de uma segunda animação, para gerar a mudança de cor na barra onde o botão de slide está contido,
     quando cumprida a condição de checked.*/
     animation-name: color-change;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 
@@ -96,7 +97,7 @@ label nav, label p:focus{
     /*Utilizando da propriedades focus para criar uma condição ao desmarcar a checkbox, fazendo com que o botão de slide
     não apenas retorne para seu estado original mas que tenha uma animação para tal.*/
     animation-name: slideback;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
