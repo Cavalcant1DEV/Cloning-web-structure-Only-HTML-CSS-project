@@ -8,7 +8,7 @@ body{
 }
 
 .header{
-    position: absolute;
+    position: fixed;
     display: flex;
     vertical-align: center;
     justify-content: space-between;
@@ -16,6 +16,8 @@ body{
     padding-bottom: 16px;
     left: 0;
     right: 0;
+    z-index: 100;
+    background-color: white;
     /*Organizando visualmente o conteúdo do cabeçalho, distribuindo espaçamento entre as sessões,
     bem como dando-lhe coloração, para facilitar o manuseamento*/
 }

@@ -10,10 +10,12 @@
 
 #My {
     text-decoration: none;
+    margin: 10px 5px 0px 0px;
 }
 
 #Download{
     text-decoration: none;
+    margin: 10px 15px 0px 5px;
 }
 
 #any-space{
@@ -180,7 +182,6 @@
 
 .my-AnyDesk-button{
     padding: 8px 25px 10px 25px;
-    margin: 10px 5px 3px 0px;
     background-color: rgb(231, 3, 3, 0.7);
     color: white;
     font-weight: bolder;
@@ -188,7 +189,7 @@
     border-width: 2px;
     border-style: solid;
     border-color:  rgb(231, 3, 3, 0.7);
-    transition: border-color 0.3s;
+    transition: background-color 0.3s;
     /*Modelando o primeiro botão estático*/
 }
 
@@ -199,14 +200,13 @@
 .Downloads{
     padding: 8px 25px 10px 25px;
     background-color: white;
-    margin: 10px 15px 3px 5px;
     color: rgb(231, 3, 3);
     font-weight: bold;
     border-radius: 25px;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(231, 3, 3);
-    transition: border-color 0.3s;
+    transition: background-color 0.3s;
 }
 .Downloads:hover{
     background-color: rgb(248, 135, 135,0.5);

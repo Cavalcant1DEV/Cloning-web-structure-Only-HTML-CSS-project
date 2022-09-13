@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
+
+main{
+    padding-top: 176px;
+    z-index: 1;
+}
+
+.intro{
+    padding-bottom: 80px;
+}
+
+.frase {
+    display: grid;
+    grid-template-columns: 1.20fr 1fr;
+    padding: 0px 15px;
+    margin-bottom: 16px;
+    font-size: 144px;
+}
+
+.letters{
+    display: flex;
+    justify-content: end;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.hidden1{
+    overflow: hidden;
+    width: 600px;
+    height: 196px;
+}
+
+.hidden2{
+    height: 196px;
+    animation: slide-back2 4s forwards;
+    animation-delay: 0.8s;
+}
+
+.letters-end{
+    display: flex;
+    color:red;
+}
+
+.hidden2 > div{
+    display: flex;
+    justify-content: end;
+    font-family: "Noto Sans", Calibri, Arial, sans-serif;
+}
+
+.content1{
+    margin-left: 227px;
+    width: 850px;
+}
+
+.botões{
+    font-size: 17.6px;
+    display: flex;
+    justify-content: center;
+}
+
+.nameless{
+    font-size: 20.8px;
+    text-align: center;
+}
+
+.button-middle{
+    display:flex;
+}
+
+.Downloads-middle{
+    padding: 18.5px 30px;
+    background-color: rgb(231, 3, 3, 0.7);
+    color: white;
+    font-weight: bolder;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:  rgb(231, 3, 3, 0.7);
+    transition: background-color 0.3s;
+}
+
+.Downloads-middle:hover{
+    background-color: rgb(231, 3, 3);
+}
+
+.buy-now{
+    padding: 18.5px 30px;
+    background-color: white;
+    color: rgb(231, 3, 3);
+    font-weight: bold;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(231, 3, 3);
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover{
+    background-color: rgb(248, 135, 135,0.5);
+}
+
+.nameless2{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 0px;
+    width: 635px;
+}
+
+/*Parte 2 do conteúdo inicialmente visível*/
+
+.black-box{
+    display: flex;
+    position: relative;
+    padding: 0px 15px;
+    height: 546.11px;
+    background-image: url(../Images/man-sitting-outside-laptop-4d04f8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 540px;
+    overflow: hidden;
+}
+
+.text-div{
+    z-index: 3;
+    padding: 50px 47px 50px 63px;
+}
+
+h5{
+    color: red;
+    font-size: 20.8px;
+    font-weight: bolder;
+    margin: 0px 0px 16px;
+}
+
+.tittle-text{
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 85px;
+    margin: 0px 0px 16px 0px;
+}
+
+#boxing {
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0px 0px 16px 0px;
+    width: 510px;
+}
+
+.about-button {
+    display: inline-flex;
+    padding: 18.5px 30px;
+    background-color: rgb(231, 3, 3, 0.8);
+    color: white;
+    font-weight: bolder;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:  rgb(231, 3, 3, 0.5);
+    transition: background-color 0.3s;
+}
+
+.about-button:hover {
+    background-color: rgb(231, 3, 3);
+}
+
+.image-box {
+    position: relative;
+    width: 694px;
+}
+
+#man {
+    position: absolute;
+    z-index: 0;
+}
+
+.white-arrow{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 322px;
+    height: 672px;
+    left: 540px;
+}
+
+.arrow1 {
+    margin: 220px 160px;
+    width: 120px;
+    height: 120px;
+}
+
+.arrow1 .arrow2{
+    opacity: 1;
+}
+
+.arrow1:hover .arrow2{
+    opacity: 0;
+    display: none;
+}
+
+.arrow1 .arrow3{
+    display: none;
+    opacity: 0;
+}
+
+.arrow1:hover .arrow3{
+    display: flex;
+    opacity: 1;
+}
+
+@keyframes slide-back2 {
+    0%{ 
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: translateY(-196px);
+    }
+
+    40%{
+        transform: translateY(-392px);
+    }
+
+    60%{
+        transform: translateY(-588px);
+    }
+
+    80%{
+        transform: translateY(-784px)
+    }
+
+    100%{
+        transform: translateY(-980px)
+    }
+}
