@@ -8,14 +8,17 @@
     border-color: white;
     cursor: pointer;
     transition: border-color 0.5s;
+    /*Determinando um padrão de alinhamento para as âncoras e navs desta seção*/
 }
 
 .middle-section > a:hover, .middle-section > nav:hover{
     border-bottom: solid;
     border-color: rgb(255,0,0, 0.4);
+    /*Determinando um sublinhado para o hover destes elementos*/
 }
 
 .black-arrow{
     width: 12px;
     height: 12px;
+    /*Reduzindo o tamanho da seta*/
 }

@@ -13,7 +13,9 @@
     <link rel="stylesheet", href="CSS/Header CSS/Left-side.css">
     <link rel="stylesheet", href="CSS/Header CSS/Middle-side.css">
     <link rel="stylesheet", href="CSS/Header CSS/Right-side.css">
-    <link rel="stylesheet", href="CSS/Main1.css">
+    <link rel="stylesheet", href="CSS/Main/Main1.css">
+    <link rel="stylesheet", href="CSS/Main/Main2.css">
+    <link rel="stylesheet", href="CSS/Main/Main3.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
     <!--Importando nosso Css-->
 </head>
@@ -44,50 +46,54 @@
             </label>
 
             <div class="any-logo">
-                <a href="https://anydesk.com/pt"><img src="Images/Anydesklogo.svg"></a>
+                <a href="https://anydesk.com/pt"><img src="Images/Left-side-img/Anydesklogo.svg"></a>
             </div>
             <!--Importanto e extruturando a logo-->
         </div>
 
         <div class="middle-section">
-        <!--Criando esta divisória para organização visual e posteriormente estiliza-la-->
+        <!--Botões/âncoras para navegação em diferentes páginas-->
 
-            <nav>Por que AnyDesk? <img src="Images/Black arrow.svg" class="black-arrow"></nav>
+            <nav>Por que AnyDesk? <img src="Images/Middle-section-img/Black arrow.svg" class="black-arrow"></nav>
 
-            <nav>Soluções <img src="Images/Black arrow.svg" class="black-arrow"></nav>
+            <nav>Soluções <img src="Images/Middle-section-img/Black arrow.svg" class="black-arrow"></nav>
 
             <a href="">Preços</a>
 
-            <nav>Serviços <img src="Images/Black arrow.svg" class="black-arrow"></nav>
+            <nav>Serviços <img src="Images/Middle-section-img/Black arrow.svg" class="black-arrow"></nav>
 
-            <nav>Empresa <img src="Images/Black arrow.svg" class="black-arrow"></nav>
+            <nav>Empresa <img src="Images/Middle-section-img/Black arrow.svg" class="black-arrow"></nav>
+
         </div>
 
         <div class="right-section">
         <!--Estilizando botões de navegação-->
 
             <div class="top-side">
+
                 <nav class="language">
                     <div class="itens">
                         <img src="https://anydesk.com/_static/flags/4x3/br.svg", class="Br"> 
                             <div class="lingua">Português</div>
                     </div>
-                    <img src="Images/arrow-down-1-13dd01.svg" class="seta">
+                    <img src="Images/Right-side-img/arrow-down-1-13dd01.svg" class="seta">
                 </nav>
+                <!--Seletor de idiomas (Estático)-->
 
                 <a href="">
                     <nav class="help-center">
                         <div class="circle-icon">
-                            <img src="Images/question-circle-e166ca.svg">
+                            <img src="Images/Right-side-img/question-circle-e166ca.svg">
                         </div>
                         <span class="text1">Help-Center</span>
                     </nav>
                 </a>
+                <!--Primeiro botão dinâmico-->
 
                 <a href="">
                     <nav class="phone">
                         <div class="circle-icon2">
-                            <img src="Images/phone-circle-186093.svg">
+                            <img src="Images/Right-side-img/phone-circle-186093.svg">
                         </div>
                         <span class="text2">+55 (81) 99788-6767</span>
                     </nav>
@@ -97,7 +103,7 @@
                 <a href="https://github.com/Cavalcant1DEV", target="_blank", id="any-space">
                     <nav class="my-anydesk-little">
                         <div class="circle-icon3">
-                            <img src="Images/single-neutral-circle_2-d96f02.svg">
+                            <img src="Images/Right-side-img/single-neutral-circle_2-d96f02.svg">
                         </div>
                         <span class="text3">Cavalcant1Dev</span>
                     </nav>
@@ -109,35 +115,44 @@
             <!--Dividindo a div em duas partes (superior e inferior) para melhor manuseamento-->
 
             <div class="bottom">
-                <!--Utilizada para manusear os botões fixos-->
+                <!--Div bottom utilizada para manusear os botões fixos-->
+
                 <a href="" id="My">
                     <nav class="my-AnyDesk-button">
                         <div class="align">my.AnyDesk</div>
                     </nav>
                 </a>
+                <!--Primeiro botão fixo-->
 
                 <a href="" id="Download">
                     <nav class="Downloads">
                         <div class="align">Downloads</div>
                     </nav>
                 </a>
-
+                <!--Segundo botão fixo (Para download)-->
             </div>
-        </div>
 
         </div>
 
     </header>
+
     <main>
+    <!--Conteúdo principal-->
+
         <div class="intro">
+        <!--Envoltório para o conteúdo inicialmente visível-->
 
             <div class="frase">
+            <!--Envoltório para o conteúdo textual-->
 
-            <div class="letters">
+                <div class="letters">
+            <!--Envoltório para o conteúdo textual animado-->
 
                 <div class="hidden1">
+                <!--Encapsulamento para a div que receberá a animação-->
 
                     <div class="hidden2">
+                        <!--Divisória animada (Troca entre as palavras)-->
                         <div>Support.</div> 
                         <div>Work.</div>
                         <div>Create.</div>
@@ -147,42 +162,59 @@
                     </div>
 
                 </div>
-            </div>
+                </div>
 
-            <div class="letters-end">
+                <div class="letters-end">
+            <!--Envoltório fixo-->
                 Now.
-            </div>
+                </div>
+
             </div>
 
             <div class="content1">
+            <!--Encapsulamento geral do segundo conteúdo textual-->
 
-            <p class="nameless">
+                <p class="nameless">
+            <!--Parágrafo inicial-->
                 Acesse qualquer dispositivo a qualquer momento e a partir de qualquer lugar, sempre de forma segura e rápida.
-            </p>
+                </p>
 
-            <div class="botões">
+                <div class="botões">
+                <!--Divisão de botões-->
 
-                <a href="" id="Download">
-                    <nav class="Downloads-middle">
-                        <div class="align">Baixe Agora</div>
-                    </nav>
-                </a>
+                    <a href="" id="Download">
+                        <nav class="Downloads-middle">
+                            <div class="align">Baixe Agora</div>
+                        </nav>
+                    </a>
+                    <!--Primeiro botão-->
 
-                <a href="" id="Download">
-                    <nav class="buy-now">
-                        <div class="align">Compre Agora</div>
-                    </nav>
-                </a>
+                    <a href="" id="Download">
+                        <nav class="buy-now">
+                            <div class="align">Compre Agora</div>
+                        </nav>
+                    </a>
+                    <!--Segundo botão-->
+
+                </div>
+
+                <p class="nameless2">Windows(3,9 MB)</p>
+                <!--Subtítulo para o botão de download-->
+
             </div>
 
-            <p class="nameless2">Windows(3,9 MB)</p>
-
-            </div>
         </div>
 
         <div class="black-box">
-            <div class="conteiner"><img src="Images/kindpng_2451557.png" class="white-arrow"></div>
+        <!--Divisão para o conteúdo de informações a respeito do site-->
+
+            <div class="conteiner">
+            <!--Divisória para a imagem inserida sobre o background (formação triangular branca)-->
+                <img src="Images/Main1-img/kindpng_2451557.png" class="white-arrow">
+            </div>
+
             <div class="text-div">
+            <!--Espaço dedicado ao conteúdo textual desta seção, tal como seus botões-->
 
                 <h5>Software de desktop remoto</h5>
                 <h2 class="tittle-text">Superando a distância</h2>
@@ -200,8 +232,8 @@
 
                     <div class="arrow1">
                         <a href="">
-                            <img src="Images/Arrow1.svg", class="arrow2">
-                            <img src="Images/Arrow2.svg", class="arrow3">
+                            <img src="Images/Main1-img/Arrow1.svg", class="arrow2">
+                            <img src="Images/Main1-img/Arrow2.svg", class="arrow3">
                         </a>
                     </div>
                 
@@ -210,6 +242,121 @@
 
         </div>
 
+        <div class="container2">
+
+            <div class="a-text-div">
+                <p class="text2">Aprovado por mais de 100.000 clientes</p>
+            </div>
+
+            <div class="animated-div-roll">
+                <div class="slider">
+                    <img src="Images/Main1-img/Main1-roll/1-f9c6dc.jpg">
+                    <img src="Images/Main1-img/Main1-roll/2-933d52.jpg">
+                    <img src="Images/Main1-img/Main1-roll/3-3179d1.jpg">
+                    <img src="Images/Main1-img/Main1-roll/4-3e4333.jpg">
+                    <img src="Images/Main1-img/Main1-roll/5-dbb9df.jpg">
+                    <img src="Images/Main1-img/Main1-roll/6-1f1a16.jpg">
+                    <img src="Images/Main1-img/Main1-roll/7-a49a86.jpg">
+                    <img src="Images/Main1-img/Main1-roll/8-724f09.jpg">
+                    <img src="Images/Main1-img/Main1-roll/9-c52bb8.jpg">
+                    <img src="Images/Main1-img/Main1-roll/10-d87a03.jpg">
+                    <img src="Images/Main1-img/Main1-roll/11-229c76.jpg">
+                    <img src="Images/Main1-img/Main1-roll/12-d4559b.jpg">
+                    <img src="Images/Main1-img/Main1-roll/13-01dce7.jpg">
+                    <img src="Images/Main1-img/Main1-roll/14-ea62c5.jpg">
+                    <img src="Images/Main1-img/Main1-roll/15-e9a4dc.jpg">
+                    <img src="Images/Main1-img/Main1-roll/16-cf5c4d.jpg">
+                    <img src="Images/Main1-img/Main1-roll/17-1b774b.jpg">
+                    <img src="Images/Main1-img/Main1-roll/18-a5a96d.jpg">
+                    <img src="Images/Main1-img/Main1-roll/19-8fd721.jpg">
+                    <img src="Images/Main1-img/Main1-roll/20-3799e1.jpg">
+                    <img src="Images/Main1-img/Main1-roll/21-b2d550.jpg">
+                    <img src="Images/Main1-img/Main1-roll/22-7d554a.jpg">
+                    <img src="Images/Main1-img/Main1-roll/23-eb4707.jpg">
+                    <img src="Images/Main1-img/Main1-roll/24-4c645a.jpg">
+                    <img src="Images/Main1-img/Main1-roll/1-f9c6dc.jpg">
+                    <img src="Images/Main1-img/Main1-roll/2-933d52.jpg">
+                    <img src="Images/Main1-img/Main1-roll/3-3179d1.jpg">
+                    <img src="Images/Main1-img/Main1-roll/4-3e4333.jpg">
+                    <img src="Images/Main1-img/Main1-roll/5-dbb9df.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container3">
+
+            <div class="cont3-img">
+                <img src="Images/Main1-img/Main2-img/fadeoutright-woman-watching-tablet-in-office-70eeb1.jpg" alt="Img.jpg" class="img3">
+            </div>
+
+            <div class="text3">
+                <h2>Mais de 500<h7>milhões</h7> </h2>
+                <p>de downloads</p>
+
+                <h2>Mais de 900<h7>milhões</h7> </h2>
+                <p>de sessões por mês</p>
+
+                <h2>50<h7>milhões</h7> </h2>
+                <p>de milhas interligadas por mês</p>
+            </div>
+
+        </div>
+
+        <div class="container4">
+
+            <div class="divisor1">
+
+                <div class="part">
+
+                    <div class="little-box">
+                        <img src="Images/Main1-img/Main3-img/space-rocket-flying-99394c.svg">
+                        <h3>Extremamente rápido</h3>
+                        <p>Latência mínima com o<br> nosso próprio codec DeskRT,<br>taxa de quadros a 60 fps.</p>
+                        <a href="">Saiba Mais</a>
+                    </div>
+
+                    <div class="little-box">
+                        <img src="Images/Main1-img/Main3-img/desktop-monitor-lock-1-5503a6.svg">
+                        <h3> Seguro</h3>
+                        <p>Segurança TLS 1.2 de nível militar, criptografia<br>de transporte AES de 256 bits</p>
+                        <a href="">Saiba Mais</a>
+                    </div>
+
+                </div>
+
+                <div class="part2">
+
+                    <div class="little-box">
+
+                        <img src="Images/Main1-img/Main3-img/app-window-download-1-a1bc23.svg">
+                        <h3>Leve</h3>
+                        <p> Instalar 3MB.<br>Iniciar aplicativo.<br> Concluído.</p>
+                        <a href="">Baixe agora</a>
+                    </div>
+
+                    <div class="little-box">
+                        <img src="Images/Main1-img/Main3-img/desktop-monitor-smiley-c8d9a4.svg">
+                        <h3>Em qualquer lugar</h3>
+                        <p>Compatível com Windows,<br>macOS, iOS, Android, Linux, Raspberry Pi</p>
+                        <a href="">Encontre Sua Plataforma</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="divisor2">
+
+                <div class="p1-1">
+                    <p class="p1">Por que mais de 500<br>
+                    milhões de usuários<br>
+                    adoram AnyDesk</p>  
+                
+                    <a href="" class="p2s"><div class="p2">Veja Estudos De Caso</div></a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
 
 main{
-    padding-top: 176px;
+    padding-top: 146px;
     z-index: 1;
 }
 
@@ -12,8 +12,8 @@ main{
 .frase {
     display: grid;
     grid-template-columns: 1.20fr 1fr;
+    margin-bottom: 10px;
     padding: 0px 15px;
-    margin-bottom: 16px;
     font-size: 144px;
 }
 
@@ -27,11 +27,11 @@ main{
 .hidden1{
     overflow: hidden;
     width: 600px;
-    height: 196px;
+    height: 180px;
 }
 
 .hidden2{
-    height: 196px;
+    height: 180px;
     animation: slide-back2 4s forwards;
     animation-delay: 0.8s;
 }
@@ -49,7 +49,7 @@ main{
 
 .content1{
     margin-left: 227px;
-    width: 850px;
+    width: 840px;
 }
 
 .botões{
@@ -59,7 +59,10 @@ main{
 }
 
 .nameless{
+    margin: 0px 0px 10px 0px;
+    font-weight: 300;
     font-size: 20.8px;
+    line-height: 35px;
     text-align: center;
 }
 
@@ -113,8 +116,9 @@ main{
     display: flex;
     position: relative;
     padding: 0px 15px;
+    margin: 0px 0px 150px 0px;
     height: 546.11px;
-    background-image: url(../Images/man-sitting-outside-laptop-4d04f8.jpg);
+    background-image: url(../../Images/Main1-img/man-sitting-outside-laptop-4d04f8.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 540px;

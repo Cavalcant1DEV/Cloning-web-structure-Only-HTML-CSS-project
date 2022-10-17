@@ -1,0 +1,175 @@
+.container2{
+    margin-bottom: 150px;
+}
+
+.a-text-div {
+    padding: 0px 15px;
+    margin-bottom: 48px;
+
+}
+
+.text2 {
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+    margin: 0px 0px 16px 0px;
+}
+
+.animated-div-roll{
+    display: flex;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.slider{ 
+    pointer-events: none;
+    display: flex;
+    height: 182.69px;
+    animation: rolls 116s forwards;
+    animation-iteration-count: infinite;
+}
+
+.slider > img{
+    pointer-events: none;
+    width: 182.69px;
+    margin: 0px 39.15px;
+    object-fit: contain;
+}
+
+@keyframes rolls {
+    4%{
+        transform: translateX(0px);
+    }
+
+    8% {
+        transform: translateX(-260.99px);
+    }
+    
+    12% {
+        transform: translateX(-521.98px);
+    }
+    
+    16% {
+        transform: translateX(-782.97px);
+    }
+
+    20% {
+        transform: translateX(-1043.96px);
+    }
+
+    24% {
+        transform: translateX(-1304.95px);
+    }
+    
+    28% {
+        transform: translateX(-1565.94px);
+    }
+
+    32% {
+        transform: translateX(-1826.93px);
+    }
+
+    36% {
+        transform: translateX(-2087.92px);
+    }
+
+    40% {
+        transform: translateX(-2348.91px);
+    }
+
+    44% {
+        transform: translateX(-2609.9px);
+    }
+
+    48% {
+        transform: translateX(-2870.89px);
+    }
+
+    52% {
+        transform: translateX(-3131.88px);
+    }
+
+    56% {
+        transform: translateX(-3392.87px);
+    }
+
+    60% {
+        transform: translateX(-3653.86px);
+    }
+
+    64% {
+        transform: translateX(-3914.85px);
+    }
+
+    68% {
+        transform: translateX(-4175,84px);
+    }
+
+    72% {
+        transform: translateX(-4436.83px);
+    }
+
+    76% {
+        transform: translateX(-4697.82px);
+    }
+
+    80% {
+        
+        transform: translateX(-4958.81px);
+    }
+
+    84% {
+        transform: translateX(-5219.8px);
+    }
+
+    88% {
+        transform: translateX(-5480.79px);
+    }
+
+    92% {
+        transform: translateX(-5741.78px);
+    }
+
+    96% {
+        transform: translateX(-6002.77px);
+    }
+
+    100% {
+        transform: translateX(-6263.76px);
+    }
+}
+
+/*Parte 2*/
+
+.container3{
+    display: flex;
+    height: 452.91px;
+    margin-bottom: 150px;
+}
+
+.img3{
+    width: 869.33px;
+}
+
+.text3{
+    position: absolute;
+    right:0;
+    z-index: 1;
+    color:red;
+    margin-right: 80px;
+}
+
+.text3 > h2 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 300;
+}
+
+h2 > h7{
+    font-size: 40px;
+}
+
+.text3 > p {
+    color: black;
+    font-weight: 300;
+}
